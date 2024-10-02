@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+    </header>
+    <main>
+        <section id="community">
+            <h2>Community Discussions</h2>
+            <ul>
+                <li><a href="discussion1.html">How to Manage Anxiety?</a></li>
+                <li><a href="discussion2.html">Coping Strategies for Stress</a></li>
+                <li><a href="discussion3.html">Share Your Story</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at sindhuch552@gmail.com</p>
+    </footer>
+</body>
+</html>
