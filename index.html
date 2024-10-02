@@ -1,59 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P2P Mental Health Support</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Mental Health Support</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        form {
+            margin-top: 10px;
+            display: flex; /* Add flex layout for forms */
+            flex-direction: column; /* Stack elements vertically */
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        /* Styles for About Section */
+        .logo {
+            display: block;
+            margin: 0 auto 20px; /* Center the logo and add bottom margin */
+            width: 100px; /* Adjust the width as necessary */
+            height: auto; /* Keep aspect ratio */
+        }
+
+        #about {
+            background-color: #f9f9f9; /* Light background color for about section */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50; /* Header color */
+            text-align: center; /* Center align the header */
+        }
+
+        p {
+            line-height: 1.6; /* Increase line height for better readability */
+            margin: 10px 0; /* Add margin above and below paragraphs */
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Peer-to-Peer Mental Health Support</h1>
-  </header>
-  
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We provide a safe space for peers to connect and support each other.</p>
-    </section>
-    
-    <section id="join">
-      <h2>Join Our Community</h2>
-      <form>
-        <label for="email">Enter your email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Join</button>
-      </form>
-    </section>
+    <header>
+        <h1>Peer-to-Peer Mental Health Support</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <img src="https://via.placeholder.com/100.png?text=Sun+Logo" alt="Sun Logo" class="logo"> <!-- Placeholder logo -->
+            <p>
+                Hi everyone! The main goal of this website is to support people who are struggling with mental health issues arising from toxic work environments, childhood traumas, anxiety, and panic attacks. 
+            </p>
+            <p>
+                We aim to connect individuals who share similar experiences, allowing them to share their journeys and learn from each other. Our platform offers a safe space where you can feel heard, understood, and supported. 
+            </p>
+            <p>
+                Remember, sometimes all you need is somebody to listen. Schedule some time to talk with someone who understands your challenges. 
+            </p>
+        </section>
+        <section id="join">
+            <h2>Join Our Community</h2>
+            <form>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Join</button>
+            </form>
+        </section>
+        <section id="signup">
+            <h2>Create Your Account</h2>
+            <form id="signupForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
 
-    <!-- New Sign-Up Form Section -->
-    <section id="signup">
-      <h2>Create Your Account</h2>
-      <form id="signupForm">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-        <label for="signupEmail">Email:</label>
-        <input type="email" id="signupEmail" name="signupEmail" required>
+                <label for="phone">Phone Number (optional):</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
 
-        <label for="phone">Phone Number (optional):</label>
-        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                <label>
+                    <input type="checkbox" id="updates" name="updates">
+                    I want to receive updates via email
+                </label>
 
-        <label>
-          <input type="checkbox" id="updates" name="updates">
-          I want to receive updates via email
-        </label>
-
-        <button type="submit">Sign Up</button>
-      </form>
-    </section>
-  </main>
-  
-  <footer>
-    <p>Contact us at sindhuch552@gmail.com for support. More information will be available soon!</p>
-  </footer>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at sindhuch552@gmail.com</p>
+    </footer>
 </body>
 </html>
