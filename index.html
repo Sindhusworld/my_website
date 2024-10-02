@@ -10,11 +10,13 @@
   <header>
     <h1>Peer-to-Peer Mental Health Support</h1>
   </header>
+  
   <main>
     <section id="about">
       <h2>About Us</h2>
       <p>We provide a safe space for peers to connect and support each other.</p>
     </section>
+    
     <section id="join">
       <h2>Join Our Community</h2>
       <form>
@@ -23,9 +25,35 @@
         <button type="submit">Join</button>
       </form>
     </section>
+
+    <!-- New Sign-Up Form Section -->
+    <section id="signup">
+      <h2>Create Your Account</h2>
+      <form id="signupForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="signupEmail">Email:</label>
+        <input type="email" id="signupEmail" name="signupEmail" required>
+
+        <label for="phone">Phone Number (optional):</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+        <label>
+          <input type="checkbox" id="updates" name="updates">
+          I want to receive updates via email
+        </label>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
   </main>
+  
   <footer>
-    <p>Contact us at sindhuch552@gmail.com</p>
+    <p>Contact us at sindhuch552@gmail.com for support. More information will be available soon!</p>
   </footer>
 </body>
 </html>
