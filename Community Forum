@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+    </header>
+    <main>
+        <section id="forum">
+            <h2>Start a Discussion</h2>
+            <form id="discussionForm">
+                <label for="topic">Topic:</label>
+                <input type="text" id="topic" name="topic" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Post</button>
+            </form>
+            <h2>Existing Discussions</h2>
+            <ul>
+                <li><a href="discussion1.html">Coping with Anxiety</a></li>
+                <li><a href="discussion2.html">Finding Support</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at sindhuch552@gmail.com</p>
+    </footer>
+</body>
+</html>
